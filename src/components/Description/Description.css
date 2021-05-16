@@ -1,0 +1,48 @@
+.myborder2:before {
+    content: "";
+    top: -2px;
+    left: -2px;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border: 2px solid transparent;
+}
+
+.myborder2:before {
+    animation: animate2 1s linear forwards;
+}
+
+.containerOpacity {
+    opacity: 0;
+    animation: opacity 0.5s linear forwards;
+}
+
+@keyframes animate2 {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: #fff;
+        border-bottom-color: #fff;
+        border-left-color: transparent;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
